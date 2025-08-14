@@ -88,7 +88,7 @@ export function TenantsDataTable() {
   const createHref = (href: string) => {
     const newSearchParams = new URLSearchParams(searchParams.toString());
     return `${href}?${newSearchParams.toString()}`;
-  }
+  };
 
 
   const onSubmit = async (values: z.infer<typeof tenantSchema>) => {
